@@ -1,9 +1,15 @@
 {
   "name": "remote-api-aws-portfolio",
   "private": true,
-  "workspaces": ["apps/*", "packages/*", "infra"],
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "infra"
+  ],
   "scripts": {
-    "lint": "echo \"add lint later\"",
-    "test": "echo \"run tests in apps\""
+    "dev:rest": "npm --workspace apps/rest-api run dev",
+    "dev:gql": "npm --workspace apps/graphql-api run dev",
+    "test": "npm -ws run test",
+    "lint": "npm -ws run lint"
   }
 }
