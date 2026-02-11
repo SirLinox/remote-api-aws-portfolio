@@ -1,0 +1,9 @@
+{
+  "name": "remote-api-aws-portfolio",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*", "infra"],
+  "scripts": {
+    "lint": "echo \"add lint later\"",
+    "test": "echo \"run tests in apps\""
+  }
+}
